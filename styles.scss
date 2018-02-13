@@ -3,13 +3,17 @@ $header-background: green;
 
 * {
   font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   font-family: Montserrat, sans-serif;
 }
 
@@ -37,7 +41,9 @@ h3 {
 h1 {
   font-family: Sail, cursive;
   font-weight: 500;
-  font-size: 3rem;
+  font-size: 4rem;
+  padding: 0;
+  margin: 0;
 }
 
 h2 {
@@ -68,13 +74,15 @@ h6 {
 header {
   background-color: $header-background;
   nav {
-    width: 99%;
+    padding: 15px;
+    width: 100%;
     position: fixed;
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;
     box-shadow: -1px 1px 20px 5px black;
     ul {
+      padding: 0 15px;
       width: 400px;
       display: flex;
       justify-content: space-around;
@@ -94,8 +102,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 600px;
 
   div {
+    text-align: center;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -103,58 +114,60 @@ header {
 }
 
 #quote {
-  padding: 5px;
+  padding: 25px;
   background-color: red;
   text-align: center;
   box-shadow: inset 1px 1px 10px 1px black;
 }
 
-#img-copy div {
-  /*box-shadow: 10px;*/
-  aside {
-    /*margin: auto;*/
+#bio {
+
+  #bio-wrapper {
+    width: 95%;
+    margin: 30px auto;
+    box-shadow: 1px 1px 30px 5px lightgray;
+    padding: 10px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    img {
-      max-width: 200px;
-      border-radius: 50%;
-      padding: 3px;
-      border: 1px solid grey;
-    }
-
-    div {
-      /*background-color: blue;*/
-      /*border: 1px solid black;*/
-      text-transform: capitalize;
-      display: flex;
-      padding: 10px;
-      /*flex-direction: column;*/
-      div {
-        display: flex;
-        flex-direction: column;
-        /*background-color: green;*/
-      }
-
-      img {
-        margin: auto;
-      }
-    }
-  }
-
-  article {
-    display: flex;
-    justify-content: center;
-    div {
+    aside {
+      border: 1px solid black;
+      /*margin: auto;*/
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      img {
+        max-width: 200px;
+        border-radius: 50%;
+        padding: 3px;
+        border: 1px solid grey;
+      }
+
+      div {
+        text-transform: capitalize;
+        display: flex;
+        padding: 10px;
+        div {
+          display: flex;
+          flex-direction: column;
+        }
+
+        img {
+          margin: auto;
+        }
+      }
     }
-    /*    h2,
-    h3 {
-      align-self: center;
-    }*/
+
+    article {
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+    }
   }
 }
 
@@ -194,12 +207,15 @@ header {
       }
 
       .divText {
+        width: 90%;
+        padding: 10px;
         margin: 0;
         background-color: $red;
         opacity: .9;
         position: absolute;
         bottom: 10px;
         left: 3px;
+        text-transform: uppercase;
       }
 
       p {

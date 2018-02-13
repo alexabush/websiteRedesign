@@ -1,11 +1,15 @@
 * {
-  font-size: 16px; }
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   font-family: Montserrat, sans-serif; }
 
 h1,
@@ -28,7 +32,9 @@ h3 {
 h1 {
   font-family: Sail, cursive;
   font-weight: 500;
-  font-size: 3rem; }
+  font-size: 4rem;
+  padding: 0;
+  margin: 0; }
 
 h2 {
   font-size: 2rem;
@@ -52,13 +58,15 @@ h6 {
 header {
   background-color: green; }
   header nav {
-    width: 99%;
+    padding: 15px;
+    width: 100%;
     position: fixed;
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;
     box-shadow: -1px 1px 20px 5px black; }
     header nav ul {
+      padding: 0 15px;
       width: 400px;
       display: flex;
       justify-content: space-around; }
@@ -72,53 +80,55 @@ header {
   background-color: green;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  height: 600px; }
   #jumbotron div {
+    text-align: center;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
 
 #quote {
-  padding: 5px;
+  padding: 25px;
   background-color: red;
   text-align: center;
   box-shadow: inset 1px 1px 10px 1px black; }
 
-#img-copy div {
-  /*box-shadow: 10px;*/ }
-  #img-copy div aside {
+#bio #bio-wrapper {
+  width: 95%;
+  margin: 30px auto;
+  box-shadow: 1px 1px 30px 5px lightgray;
+  padding: 10px;
+  display: flex; }
+  #bio #bio-wrapper aside {
+    border: 1px solid black;
     /*margin: auto;*/
     display: flex;
     flex-direction: column;
     align-items: center; }
-    #img-copy div aside img {
+    #bio #bio-wrapper aside img {
       max-width: 200px;
       border-radius: 50%;
       padding: 3px;
       border: 1px solid grey; }
-    #img-copy div aside div {
-      /*background-color: blue;*/
-      /*border: 1px solid black;*/
+    #bio #bio-wrapper aside div {
       text-transform: capitalize;
       display: flex;
-      padding: 10px;
-      /*flex-direction: column;*/ }
-      #img-copy div aside div div {
+      padding: 10px; }
+      #bio #bio-wrapper aside div div {
         display: flex;
-        flex-direction: column;
-        /*background-color: green;*/ }
-      #img-copy div aside div img {
+        flex-direction: column; }
+      #bio #bio-wrapper aside div img {
         margin: auto; }
-  #img-copy div article {
+  #bio #bio-wrapper article {
+    border: 1px solid black;
     display: flex;
-    justify-content: center;
-    /*    h2,
-    h3 {
-      align-self: center;
-    }*/ }
-    #img-copy div article div {
+    justify-content: center; }
+    #bio #bio-wrapper article div {
       display: flex;
       flex-direction: column;
+      justify-content: space-around;
       align-items: center; }
 
 #portfolio {
@@ -147,12 +157,15 @@ header {
         border-radius: 5px;
         width: 300px; }
       #portfolio #projectDiv div .divText {
+        width: 90%;
+        padding: 10px;
         margin: 0;
         background-color: #F04D47;
         opacity: .9;
         position: absolute;
         bottom: 10px;
-        left: 3px; }
+        left: 3px;
+        text-transform: uppercase; }
       #portfolio #projectDiv div p {
         transition: transform 1s; }
       #portfolio #projectDiv div:hover p {
