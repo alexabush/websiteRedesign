@@ -123,8 +123,15 @@ header nav {
     max-width: 1000px; }
     #portfolio #projectDiv div {
       color: white;
-      width: 300px; }
+      width: 300px;
+      position: relative; }
       #portfolio #projectDiv div img {
+        border: 2px solid white;
+        border-radius: 5px;
         width: 300px; }
+      #portfolio #projectDiv div .divText {
+        background-color: red;
+        position: absolute;
+        bottom: 10px; }
 
 /*# sourceMappingURL=styles.css.map */

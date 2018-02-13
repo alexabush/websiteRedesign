@@ -167,9 +167,18 @@ header {
     div {
       color: white;
       width: 300px;
+      position: relative;
 
       img {
+        border: 2px solid white;
+        border-radius: 5px;
         width: 300px;
+      }
+
+      .divText {
+        background-color: red;
+        position: absolute;
+        bottom: 10px;
       }
     }
   }
