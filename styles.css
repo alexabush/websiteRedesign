@@ -52,8 +52,8 @@ h6 {
 header nav {
   text-transform: uppercase;
   display: flex;
-  /*flex-direction: row;*/
-  justify-content: space-between; }
+  justify-content: space-between;
+  box-shadow: -1px 1px 20px 2px black; }
   header nav li {
     display: inline; }
 
@@ -68,8 +68,10 @@ header nav {
     justify-content: space-between; }
 
 #quote {
+  padding: 5px;
   background-color: red;
-  text-align: center; }
+  text-align: center;
+  box-shadow: inset 1px 1px 10px 1px black; }
 
 #img-copy div {
   /*box-shadow: 10px;*/ }
@@ -110,10 +112,13 @@ header nav {
 
 #portfolio {
   background-color: #F04D47; }
+  #portfolio #wrapper {
+    box-shadow: inset -1px -1px 20px 2px black;
+    padding: 40px; }
   #portfolio #header {
-    padding: 30px;
     color: white;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 30px; }
   #portfolio #projectDiv {
     margin: auto;
     display: flex;
@@ -124,12 +129,14 @@ header nav {
     #portfolio #projectDiv div {
       color: white;
       width: 300px;
-      position: relative; }
+      position: relative;
+      margin: 10px; }
       #portfolio #projectDiv div img {
         border: 2px solid white;
         border-radius: 5px;
         width: 300px; }
       #portfolio #projectDiv div .divText {
+        margin: 0;
         background-color: #F04D47;
         opacity: .9;
         position: absolute;
