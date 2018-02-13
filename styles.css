@@ -49,13 +49,24 @@ h6 {
   color: #84d4d8;
   font-size: 1.9rem; }
 
-header nav {
-  text-transform: uppercase;
-  display: flex;
-  justify-content: space-between;
-  box-shadow: -1px 1px 20px 2px black; }
-  header nav li {
-    display: inline; }
+header {
+  background-color: green; }
+  header nav {
+    width: 99%;
+    position: fixed;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: -1px 1px 20px 5px black; }
+    header nav ul {
+      width: 400px;
+      display: flex;
+      justify-content: space-around; }
+      header nav ul li {
+        display: inline; }
+        header nav ul li a {
+          color: white;
+          text-decoration: none; }
 
 #jumbotron {
   background-color: green;
