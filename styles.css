@@ -135,5 +135,10 @@ header nav {
         position: absolute;
         bottom: 10px;
         left: 3px; }
+      #portfolio #projectDiv div p {
+        transition: transform 1s; }
+      #portfolio #projectDiv div:hover p {
+        transition: transform 1s;
+        transform: translate(100px); }
 
 /*# sourceMappingURL=styles.css.map */

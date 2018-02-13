@@ -184,6 +184,15 @@ header {
         bottom: 10px;
         left: 3px;
       }
+      p {
+        transition: transform 1s;
+      }
+      &:hover {
+        p {
+          transition: transform 1s;
+          transform: translate(100px);
+        }
+      }
     }
   }
 }
