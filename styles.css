@@ -130,8 +130,10 @@ header nav {
         border-radius: 5px;
         width: 300px; }
       #portfolio #projectDiv div .divText {
-        background-color: red;
+        background-color: #F04D47;
+        opacity: .9;
         position: absolute;
-        bottom: 10px; }
+        bottom: 10px;
+        left: 3px; }
 
 /*# sourceMappingURL=styles.css.map */
