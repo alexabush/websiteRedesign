@@ -102,13 +102,12 @@ header {
   padding: 10px;
   display: flex; }
   #bio #bio-wrapper aside {
-    border: 1px solid black;
-    /*margin: auto;*/
+    padding: 0 30px;
     display: flex;
     flex-direction: column;
     align-items: center; }
     #bio #bio-wrapper aside img {
-      max-width: 200px;
+      max-width: 250px;
       border-radius: 50%;
       padding: 3px;
       border: 1px solid grey; }
@@ -122,10 +121,10 @@ header {
       #bio #bio-wrapper aside div img {
         margin: auto; }
   #bio #bio-wrapper article {
-    border: 1px solid black;
     display: flex;
     justify-content: center; }
     #bio #bio-wrapper article div {
+      padding: 0 50px;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
