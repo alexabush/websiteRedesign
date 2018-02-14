@@ -166,10 +166,10 @@ header {
       position: relative;
       margin: 10px; }
       #portfolio #projectDiv div img {
-        border: 2px solid white;
-        border-radius: 5px;
-        width: 300px; }
+        max-width: 300px; }
       #portfolio #projectDiv div .divText {
+        border: 1px solid white;
+        border-radius: 5px;
         width: 90%;
         padding: 10px;
         margin: 0;
