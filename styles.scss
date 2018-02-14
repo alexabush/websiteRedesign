@@ -1,5 +1,6 @@
 $red: #F04D47;
 $header-background: green;
+$blue: #51b3bf;
 
 * {
   font-size: 16px;
@@ -233,4 +234,18 @@ header {
       }
     }
   }
+}
+
+#contact {
+  background-color: $blue;
+  color: white;
+  margin: 30px 0;
+  padding: 20px;
+}
+
+footer {
+  background-color: $red;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
