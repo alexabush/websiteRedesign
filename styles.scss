@@ -75,6 +75,8 @@ h6 {
 header {
   background-color: $header-background;
   nav {
+    opacity: .8;
+    z-index: 10000;
     padding: 15px;
     width: 100%;
     position: fixed;
@@ -116,7 +118,7 @@ header {
 
 #quote {
   padding: 25px;
-  background-color: red;
+  background-color: $red;
   text-align: center;
   box-shadow: inset 1px 1px 10px 1px black;
 }
@@ -160,12 +162,10 @@ header {
     }
 
     article {
-      // border: 1px solid black;
       display: flex;
       justify-content: center;
       div {
         padding: 0 50px;
-        // width: 80%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -220,16 +220,17 @@ header {
         bottom: 10px;
         left: 3px;
         text-transform: uppercase;
+        display: flex;
       }
 
       p {
-        transition: transform 1s;
+        transition: all 1s;
       }
 
       &:hover {
         p {
-          transition: transform 1s;
-          transform: translate(100px);
+          transition: all 1s;
+          transform: translateX(50%);
         }
       }
     }
@@ -248,4 +249,8 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
+}
+
+.navColor {
+  background-color: $red;
 }

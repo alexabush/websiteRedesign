@@ -58,6 +58,8 @@ h6 {
 header {
   background-color: green; }
   header nav {
+    opacity: .8;
+    z-index: 10000;
     padding: 15px;
     width: 100%;
     position: fixed;
@@ -91,7 +93,7 @@ header {
 
 #quote {
   padding: 25px;
-  background-color: red;
+  background-color: #F04D47;
   text-align: center;
   box-shadow: inset 1px 1px 10px 1px black; }
 
@@ -164,12 +166,13 @@ header {
         position: absolute;
         bottom: 10px;
         left: 3px;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        display: flex; }
       #portfolio #projectDiv div p {
-        transition: transform 1s; }
+        transition: all 1s; }
       #portfolio #projectDiv div:hover p {
-        transition: transform 1s;
-        transform: translate(100px); }
+        transition: all 1s;
+        transform: translateX(50%); }
 
 #contact {
   background-color: #51b3bf;
@@ -182,5 +185,8 @@ footer {
   color: white;
   text-align: center;
   padding: 20px; }
+
+.navColor {
+  background-color: #F04D47; }
 
 /*# sourceMappingURL=styles.css.map */
