@@ -58,7 +58,7 @@ h6 {
 header {
   background-color: green; }
   header nav {
-    opacity: .8;
+    opacity: .85;
     z-index: 10000;
     padding: 15px;
     width: 100%;
@@ -92,11 +92,22 @@ header {
     justify-content: space-between; }
 
 #quote {
+  height: 86px;
+  overflow: hidden;
   padding: 25px;
   background-color: #F04D47;
   text-align: center;
   box-shadow: inset 1px 1px 10px 1px black; }
 
+@media screen and (max-width: 734) {
+  body {
+    background-color: blue; } }
+@media screen and (max-width: 734px) {
+  #bio #bio-wrapper {
+    flex-direction: column; }
+    #bio #bio-wrapper aside {
+      padding: 30px;
+      margin: 30px; } }
 #bio #bio-wrapper {
   width: 95%;
   margin: 30px auto;

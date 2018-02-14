@@ -10,7 +10,7 @@ $(document).ready(function() {
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     // console.log(scroll)
-    if (scroll > 600) {
+    if (scroll > 637) {
       $nav.addClass('navColor');
     } else {
       $nav.removeClass('navColor');

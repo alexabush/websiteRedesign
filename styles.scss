@@ -75,7 +75,7 @@ h6 {
 header {
   background-color: $header-background;
   nav {
-    opacity: .8;
+    opacity: .85;
     z-index: 10000;
     padding: 15px;
     width: 100%;
@@ -117,10 +117,32 @@ header {
 }
 
 #quote {
+  height: 86px;
+  overflow: hidden;
   padding: 25px;
   background-color: $red;
   text-align: center;
   box-shadow: inset 1px 1px 10px 1px black;
+}
+
+@media screen and (max-width: 734) {
+  body {
+
+    background-color: blue;
+  } // display: flex;
+  // flex-direction: column;
+}
+
+@media screen and (max-width: 734px) {
+  #bio {
+    #bio-wrapper {
+      flex-direction: column;
+      aside {
+        padding: 30px;
+        margin: 30px;
+      }
+    }
+  }
 }
 
 #bio {
@@ -131,6 +153,8 @@ header {
     box-shadow: 1px 1px 30px 5px lightgray;
     padding: 10px;
     display: flex;
+
+
 
     aside {
       // border: 1px solid black;
@@ -162,6 +186,7 @@ header {
     }
 
     article {
+      // border: 1px solid black;
       display: flex;
       justify-content: center;
       div {
@@ -254,3 +279,14 @@ footer {
 .navColor {
   background-color: $red;
 }
+
+
+
+
+// @media screen and (min-width: 734) {
+//   body {
+//     background-color: blue;
+//   }
+//   // display: flex;
+//   // flex-direction: column;
+// }
