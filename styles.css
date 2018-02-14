@@ -102,12 +102,6 @@ header {
 @media screen and (max-width: 734) {
   body {
     background-color: blue; } }
-@media screen and (max-width: 734px) {
-  #bio #bio-wrapper {
-    flex-direction: column; }
-    #bio #bio-wrapper aside {
-      padding: 30px;
-      margin: 30px; } }
 #bio #bio-wrapper {
   width: 95%;
   margin: 30px auto;
@@ -142,7 +136,15 @@ header {
       flex-direction: column;
       justify-content: space-around;
       align-items: center; }
+      #bio #bio-wrapper article div p {
+        padding: 5px;
+        line-height: 1.2rem; }
 
+@media screen and (max-width: 734px) {
+  #bio #bio-wrapper {
+    flex-direction: column; }
+    #bio #bio-wrapper aside {
+      padding: 30px; } }
 #portfolio {
   background-color: #F04D47; }
   #portfolio #wrapper {
