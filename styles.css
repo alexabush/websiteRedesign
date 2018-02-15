@@ -192,7 +192,7 @@ header {
         transition: all 1s; }
       #portfolio #projectDiv > div:hover p {
         transition: all 1s;
-        transform: translateX(50%); }
+        transform: translateX(20%); }
 
 #contact {
   background-color: #51b3bf;
