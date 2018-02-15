@@ -26,8 +26,14 @@ h1,
 h5 {
   text-transform: capitalize; }
 
+h2,
 h3 {
   text-transform: uppercase; }
+
+h3,
+h4,
+h5 {
+  font-weight: 300; }
 
 h1 {
   font-family: Sail, cursive;
@@ -37,20 +43,16 @@ h1 {
   margin: 0; }
 
 h2 {
-  font-size: 2rem;
-  text-transform: uppercase; }
+  font-size: 2rem; }
 
 h3 {
-  font-weight: 200;
   font-size: 1.1rem; }
 
 h4 {
-  font-weight: 200;
   font-size: 1rem; }
 
 h5 {
-  font-size: 40px;
-  font-weight: 300; }
+  font-size: 40px; }
 
 h6 {
   color: #84d4d8;
@@ -78,7 +80,10 @@ header {
         display: inline; }
         header nav ul li a {
           color: white;
-          text-decoration: none; }
+          text-decoration: none;
+          transition: all .2s; }
+          header nav ul li a:hover {
+            color: lightblue; }
 
 #jumbotron {
   background-color: green;
@@ -193,14 +198,27 @@ header {
       #portfolio #projectDiv > div p {
         transition: all 1s; }
       #portfolio #projectDiv > div:hover p {
-        transition: all 1s;
-        transform: translateX(20%); }
+        transform: translate(20%); }
 
 #contact {
   background-color: #51b3bf;
   color: white;
   margin: 30px 0;
-  padding: 20px; }
+  padding: 20px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  #contact a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300; }
+    #contact a div {
+      display: flex;
+      padding: 5px 0; }
+      #contact a div p {
+        padding-left: 10px;
+        font-size: 1.15rem; }
 
 footer {
   background-color: #F04D47;
