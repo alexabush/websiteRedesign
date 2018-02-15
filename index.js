@@ -1,7 +1,7 @@
 $(document).ready(function() {
   const $projectDiv = $('#projectDiv');
   const $imgs = $('#projectDiv > div > img');
-  const $nav = $('nav')
+  const $nav = $('nav');
 
   for (let i = $imgs.length - 2; i < $imgs.length; i++) {
     $($imgs[i]).attr('src', './img/gear_art.jpg');
@@ -15,6 +15,6 @@ $(document).ready(function() {
     } else {
       $nav.removeClass('navColor');
     }
-  })
+  });
 
-})
+});
