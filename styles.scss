@@ -134,7 +134,6 @@ header {
     padding: 10px;
     display: flex;
 
-
     aside {
       padding: 0 30px;
       display: flex;
@@ -153,16 +152,18 @@ header {
         text-transform: capitalize;
         display: flex;
         padding: 10px;
-        div {
-          display: flex;
+        a {
+          text-decoration: none;
+          color: black;
 
-          p {
-            padding-left: 5px;
+          div {
+            display: flex;
+
+            p {
+              padding-left: 5px;
+              font-size: 1.15rem;
+            }
           }
-        }
-
-        img {
-          margin: auto;
         }
       }
     }

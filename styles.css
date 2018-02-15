@@ -120,12 +120,14 @@ header {
       text-transform: capitalize;
       display: flex;
       padding: 10px; }
-      #bio #bio-wrapper aside div div {
-        display: flex; }
-        #bio #bio-wrapper aside div div p {
-          padding-left: 5px; }
-      #bio #bio-wrapper aside div img {
-        margin: auto; }
+      #bio #bio-wrapper aside div a {
+        text-decoration: none;
+        color: black; }
+        #bio #bio-wrapper aside div a div {
+          display: flex; }
+          #bio #bio-wrapper aside div a div p {
+            padding-left: 5px;
+            font-size: 1.15rem; }
   #bio #bio-wrapper article {
     display: flex;
     justify-content: center; }
