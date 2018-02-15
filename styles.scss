@@ -64,6 +64,7 @@ h4 {
 
 h5 {
   font-size: 40px;
+  font-weight: 300;
 }
 
 
@@ -82,10 +83,11 @@ header {
     position: fixed;
     text-transform: uppercase;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     box-shadow: -1px 1px 20px 5px black;
     ul {
       padding: 0 15px;
+      width: 100%;
       width: 400px;
       display: flex;
       justify-content: space-around;
